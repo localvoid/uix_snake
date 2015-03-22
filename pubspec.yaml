@@ -6,4 +6,4 @@ environment:
 dependencies:
   browser: any
   uix:
-    git: 'https://github.com/localvoid/uix'
+    git: git://github.com/localvoid/uix.git

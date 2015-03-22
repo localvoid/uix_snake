@@ -44,7 +44,7 @@ class AppView extends Component<AppState> {
     }
   }
 
-  build() {
+  updateView() {
     _grid = vElement('div',
         type: 'Grid',
         attrs: const {'tabindex': '0'},
@@ -61,11 +61,10 @@ class AppView extends Component<AppState> {
       children.add(vElement('div', type: 'Modal')('Paused'));
     }
 
-    return vRoot(type: 'SnakeGame',
+    updateRoot(vRoot(type: 'SnakeGame',
         classes: data.mode == GameMode.gameOver ? const ['gameOver'] : null,
-        children: children);
+        children: children));
   }
-
 
   static List<String> cellClasses(int c) {
     if ((c & Grid.body) != 0) {
