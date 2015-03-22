@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2015-03-20T04:31:40.227Z
+// 2015-03-22T11:20:14.643Z
 
 part of app.view;
 
@@ -8,8 +8,10 @@ part of app.view;
 // Target: class AppView
 // **************************************************************************
 
-AppView createAppView([AppState data]) {
-  final r = new AppView()..data = data;
+AppView createAppView([AppState data, Component parent]) {
+  final r = new AppView()
+    ..parent = parent
+    ..data = data;
   r.init();
   return r;
 }
