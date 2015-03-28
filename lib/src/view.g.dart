@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// 2015-03-22T11:20:14.643Z
+// 2015-03-28T11:14:07.721Z
 
 part of app.view;
 
@@ -8,17 +8,16 @@ part of app.view;
 // Target: class AppView
 // **************************************************************************
 
-AppView createAppView([AppState data, Component parent]) {
-  final r = new AppView()
+AppView createAppView([AppState data, List<VNode> children, Component parent]) {
+  return new AppView()
     ..parent = parent
-    ..data = data;
-  r.init();
-  return r;
+    ..data = data
+    ..children = children;
 }
 VNode vAppView({AppState data, Object key, String type,
     Map<String, String> attrs, Map<String, String> style, List<String> classes,
     List<VNode> children}) => new VNode.component(createAppView,
-    flags: VNode.componentFlag | VNode.dirtyCheckFlag,
+    flags: VNode.componentFlag,
     key: key,
     data: data,
     type: type,

@@ -2,7 +2,7 @@ name: uix_snake
 version: 0.0.1
 description: Snake Game
 environment:
-  sdk: '>=1.9.0-dev'
+  sdk: '>=1.9.1'
 dependencies:
   browser: any
   uix:
