@@ -9,6 +9,6 @@ void main() {
   final state = new AppState();
 
   scheduler.nextFrame.write().then((_) {
-    injectComponent(createAppView(state), html.document.body);
+    injectComponent(new AppView()..data = state, html.document.body);
   });
 }
