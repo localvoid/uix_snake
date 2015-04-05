@@ -4,11 +4,8 @@ import 'dart:html' as html;
 import 'package:uix/uix.dart';
 import 'game.dart';
 
-part 'view.g.dart';
-
 const int cellSize = 30;
 
-@ComponentMeta()
 class AppView extends Component<AppState> {
   VNode _grid;
 
