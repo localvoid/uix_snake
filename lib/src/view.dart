@@ -44,10 +44,10 @@ class AppView extends Component<AppState> {
   updateView() {
     _grid = vElement('div',
         type: 'Grid',
-        attrs: const {'tabindex': '0'},
+        attrs: const {Attr.tabIndex: '0'},
         style: {
-          'width': '${cellSize * data.grid.cols}px',
-          'height': '${cellSize * data.grid.rows}px'})(
+          Style.width: '${cellSize * data.grid.cols}px',
+          Style.height: '${cellSize * data.grid.rows}px'})(
       data.grid.cells.map((c) => vElement('div', type: 'Cell', classes: cellClasses(c))));
 
     final children = [_grid];
